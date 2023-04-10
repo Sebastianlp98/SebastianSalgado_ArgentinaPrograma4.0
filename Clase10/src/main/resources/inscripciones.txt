@@ -1,0 +1,14 @@
+José Rodríguez;Programación I
+Vanesa Sosa;Bases de datos I
+Lucia Perez;Bases de datos I
+Vanesa Sosa;Programación II
+Ezequiel Frossasco;Bases de datos II
+Ezequiel Frossasco;Química
+Ezequiel Frossasco;Filosofía
+Ezequiel Frossasco;Programación II
+Lucia Pérez;Programación II
+Lucia Pérez;Bases de datos II
+José Rodríguez;Programación II
+Ezequiel Frossasco;Bases de datos I
+Lucia Pérez;Bases de datos I
+José Rodríguez;Base de datos I
