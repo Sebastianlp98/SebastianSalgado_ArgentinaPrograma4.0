@@ -1,0 +1,25 @@
+--creo la base de datos
+CREATE DATABASE guia12;
+
+--me conecto a ella, para poder trabajar sobre ésta
+\c guia12
+
+--creo la tabla de empleados con sus respectivas columnas
+--por ahora no vamos a agregar la columna "Departamento"
+--asignamos el dni como la clave primaria, es decir, que el dni hará unívoco a cada registro (no pueden haber dos dni iguales)
+CREATE TABLE Empleados (Dni INT, Nombre VARCHAR(50), Apellido VARCHAR(50), Nacionalidad VARCHAR(50), PRIMARY KEY (Dni));
+
+--creo la tabla dónde guardaré mis departamentos
+--cada departamento se diferencia por su nombre
+CREATE TABLE Departamentos (Nombre VARCHAR(50), Presupuesto INT, PRIMARY KEY(Nombre));
+
+--agrego una columna en mi tabla de empleados, para especificar a que departamento pertenece cada uno
+ALTER TABLE emplEadOs ADD COLUMN Departamento VARCHAR(50);
+
+--creo la relación entre la tabla de mis empleados y la de mis departamentos
+--básicamente mi clave fóranea de los empleados será su departamento correspondiente, esto se ve indicado por el nombre del departamento
+--en el comando estoy especificando que si se elimina un registro de mi tabla departamento (elimino un departamento),
+--el empleado que pertenezca a ese departamento tendrá un valor nulo en su columna "departamento" ("ON DELETE set null")
+--y en el caso de que se actualice el nombre del departamento (la clave fóranea) el cambio también se verá afectado en mi empleado ("ON UPDATE cascade")
+--"cascade" quiere decir que afecta a todos los registros que estén relacionados con lo que estoy manipulando (en este caso un registro de la tabla "Departamentos")
+ALTER TABLE empleados ADD CONSTRAINT relacion_empleado_departamento FOREIGN KEY (departamento) REFERENCES departamentos (nombre) ON DELETE set null ON UPDATE cascade;
