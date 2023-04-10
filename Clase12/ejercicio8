@@ -1,0 +1,5 @@
+--agregamos la sentencia "ORDER BY" y el campo que tomamos para determinar el orden
+SELECT * FROM departamentos ORDER BY nombre;
+
+--si queremos que sea descendente, simplemente agregamos el modificador "DESC" al final de la consulta
+SELECT * FROM departamentos ORDER BY nombre DESC;
