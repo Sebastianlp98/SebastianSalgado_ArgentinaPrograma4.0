@@ -1,0 +1,3 @@
+--borro mi departamento de seguridad
+DELETE FROM departamentos WHERE nombre='Seguridad';
+--ahora los empleados que pertenecían a este departamento tendrán un valor nulo en su columna correspondiente
