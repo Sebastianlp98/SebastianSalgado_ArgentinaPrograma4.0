@@ -1,0 +1,18 @@
+--una vez realizado mi modelo, agrego los departamentos y después los empleados
+INSERT INTO departamentos (nombre, presupuesto) VALUES ('Logística', 1000000);
+INSERT INTO departamentos (nombre, presupuesto) VALUES ('Sistemas', 600000);
+INSERT INTO departamentos (nombre, presupuesto) VALUES ('Compras', 1500000);
+INSERT INTO departamentos (presupuesto, nombre) VALUES (900000, 'Seguridad');
+INSERT INTO departamentos (presupuesto, nombre) VALUES (300000, 'Higiene');
+INSERT INTO departamentos (presupuesto, nombre) VALUES (2000000, 'Marketing');
+
+INSERT INTO empleados (dni, nombre, apellido, nacionalidad, departamento) VALUES (34789132, 'Luciano', 'Pereyra', 'Argentina', 'Sistemas');
+INSERT INTO empleados (dni, nombre, apellido, nacionalidad, departamento) VALUES (38902374, 'Pedro', 'Sánchez', 'España', 'Compras');
+INSERT INTO empleados (dni, nombre, apellido, nacionalidad, departamento) VALUES (40801230, 'Alejandro', 'Burgos', 'Colombia', 'Logística');
+INSERT INTO empleados (dni, nombre, apellido, nacionalidad, departamento) VALUES (32569231, 'Matías', 'Arias', 'EEUU', 'Sistemas');
+INSERT INTO empleados (dni, nombre, apellido, nacionalidad, departamento) VALUES (43670183, 'Paola', 'Mercado', 'Inglaterra', 'Marketing');
+INSERT INTO empleados (dni, nombre, apellido, nacionalidad, departamento) VALUES (42005219, 'Osvaldo', 'Pérez', 'Argentina', 'Higiene');
+INSERT INTO empleados (dni, nombre, apellido, nacionalidad, departamento) VALUES (38745432, 'Matías', 'Maturana', 'Argentina', 'Seguridad');
+INSERT INTO empleados (dni, nombre, apellido, nacionalidad, departamento) VALUES (40721008, 'Carla', 'Torres', 'Colombia', 'Sistemas');
+INSERT INTO empleados (dni, nombre, apellido, nacionalidad, departamento) VALUES (40695230, 'Tiago', 'Pérez', 'Argentina', 'Compras');
+--puedo agregar los empleados que quiera!
