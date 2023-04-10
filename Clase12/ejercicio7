@@ -1,0 +1,8 @@
+--mostramos todas las columnas (toda la información) de los empleados que pertenecen a ese departamento
+SELECT * FROM empleados WHERE departamento='Logística';
+
+--nótese que en este caso las mayúsculas o minúsculas si afectan a la consulta!
+SELECT * FROM empleados WHERE departamento='logística';
+
+--también tener en cuenta caracteres latinos!
+SELECT * FROM empleados WHERE departamento='Logistica';
