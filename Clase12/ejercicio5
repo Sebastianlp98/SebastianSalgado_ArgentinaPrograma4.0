@@ -1,0 +1,2 @@
+--voy a cambiar la nacionalidad de Matías Arias
+UPDATE empleados SET Nacionalidad='Argentina' WHERE dni=32569231;
